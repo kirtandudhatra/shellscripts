@@ -1,0 +1,14 @@
+!/bin/bash
+# Display specific number of line
+
+if [ $# -eq 1 ];then 
+	echo "First 10 Lines:-"
+	head $1
+	echo "3-8 Lines:-"
+        head -8 $1 | tail -6
+	echo "7 Lines starting from second last in reverse manner"
+	tac $1 | awk {'if(NR>1)print'} | head -7
+
+else
+	echo "Invalid arguments. Usage: $(basename $0) FILENAME"
+fi

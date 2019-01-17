@@ -1,0 +1,15 @@
+#!/bin/bash 
+# Add .new extension to every files
+
+if [ $# -ne 1 ];then
+	echo "Invalid arguments>> Usage: ./$(basename $0) Path_To_Directory"
+	exit 3
+fi
+cd $1
+files=$(ls -p | grep -v /)
+echo $files
+
+for i in $files
+do
+	mv $i "$i.new"
+done

@@ -1,0 +1,28 @@
+total 44
+-rwxr-xr-x 1 kirtan kirtan  147 Jan 16 17:38 10_abc.new
+-rwxr-xr-x 1 kirtan kirtan  238 Jan 16 17:47 1_ext
+-rwxr-xr-x 1 kirtan kirtan  134 Jan 16 17:42 1_ext.new
+-rw-r--r-- 1 kirtan kirtan  190 Jan 16 15:25 2_removefile.new
+-rwxr-xr-x 1 kirtan kirtan  888 Jan 16 15:45 3_arithmatic.new
+-rwxr-xr-x 1 kirtan kirtan  426 Jan 16 16:04 4_loop.new
+-rwxr-xr-x 1 kirtan kirtan  901 Jan 16 16:48 6_count.new
+-rwxr-xr-x 1 kirtan kirtan  141 Jan 16 17:12 7_bcp.new
+-rwxr-xr-x 1 kirtan kirtan  320 Jan 16 17:26 8_lines.new
+drwxr-xr-x 4 kirtan kirtan 4096 Jan 16 16:38 a
+-rw-r--r-- 1 kirtan kirtan    0 Jan 16 15:22 abc.new
+-rw-r--r-- 1 kirtan kirtan    0 Jan 16 17:50 abc.txt
+-rw-r--r-- 1 kirtan kirtan    1 Jan 16 17:35 abc.txt.new
+total 48
+-rwxr-xr-x 1 kirtan kirtan  147 Jan 16 17:38 10_abc.new
+-rwxr-xr-x 1 kirtan kirtan  238 Jan 16 17:47 1_ext
+-rwxr-xr-x 1 kirtan kirtan  134 Jan 16 17:42 1_ext.new
+-rw-r--r-- 1 kirtan kirtan  190 Jan 16 15:25 2_removefile.new
+-rwxr-xr-x 1 kirtan kirtan  888 Jan 16 15:45 3_arithmatic.new
+-rwxr-xr-x 1 kirtan kirtan  426 Jan 16 16:04 4_loop.new
+-rwxr-xr-x 1 kirtan kirtan  901 Jan 16 16:48 6_count.new
+-rwxr-xr-x 1 kirtan kirtan  141 Jan 16 17:12 7_bcp.new
+-rwxr-xr-x 1 kirtan kirtan  320 Jan 16 17:26 8_lines.new
+drwxr-xr-x 4 kirtan kirtan 4096 Jan 16 16:38 a
+-rw-r--r-- 1 kirtan kirtan    0 Jan 16 15:22 abc.new
+-rw-r--r-- 1 kirtan kirtan  730 Jan 16 17:50 abc.txt
+-rw-r--r-- 1 kirtan kirtan    1 Jan 16 17:35 abc.txt.new

@@ -1,0 +1,11 @@
+#!/bin/bash 
+# Search for abc
+
+files=$(ls -p | grep -v /)
+
+for i in $files
+do
+	if [[ $(cat $i | grep abc | wc -l) -ne 0 ]];then
+		echo $i
+	fi
+done

@@ -1,0 +1,12 @@
+#!/bin/bash 
+# This script will remove files which has special characters
+
+files=$(ls -p | grep -v /)
+echo $files
+
+for i in $files
+do
+	if [[ "$i" =~ [^0-9A-Za-z]+ ]];then
+		rm $i
+	fi
+done

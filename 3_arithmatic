@@ -1,0 +1,39 @@
+#!/bin/bash
+# This script takes two input numbers from user at runtime and display arithmetic operation on that numbers, finds out max, & min number from them, finds weather that numbers negative or positive.
+
+read -p "Enter first number:" num1
+read -p "Enter second number:" num2
+
+echo "Arithmetic Operations:"
+echo -n "$num1 + $num2 = "
+echo $((num1 + $num2))
+echo -n "$num1 - $num2 = "
+echo $((num1 - $num2))
+echo -n "$num1 * $num2 = "
+echo $((num1 * $num2))
+echo -n "$num1 / $num2 = "
+echo $((num1 / $num2))
+
+if [ $num1 -ge $num2 ];then
+	echo -n "Max Number: "
+	echo $num1
+	echo -n "Min Number: "
+	echo $num2
+else
+	echo -n "Max Number: "
+	echo $num2
+	echo -n "Min Number: "
+        echo $num1
+fi
+
+if [ $num1 -lt 0 ];then
+	echo "$num1 is Negative."
+else
+	echo "$num1 is Positive."
+fi
+if [ $num2 -lt 0 ];then
+        echo "$num2 is Negative."
+else
+        echo "$num2 is Positive."
+fi
+

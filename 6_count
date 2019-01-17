@@ -1,0 +1,41 @@
+#!/bin/bash 
+# This shell script is to get the total count of the word “Linux” in all the “.txt” files and also across files present in subdirectories.
+ttl=0
+search_linux(){
+    for file in "$1"/* 
+    do 
+    	   declare -i ts=$2	
+	   if [ -d "$file" ]
+    then 
+	   while [ $ts -gt 0 ]
+	   do
+		   echo -n "   "
+		   ts=$ts-1
+	   done 
+	   ts=$2+1
+	   echo -n "|--";echo "$file" | sed "s/\// /g" | awk '{print $NF}'
+           search_linux "$file" $ts $ttl
+    elif [[ "$file" == *.txt ]]
+    then
+	   while [ $ts -gt 0 ]
+           do
+                   echo -n "     "
+                   ts=$ts-1
+           done
+	   ocrr=$(cat $file | grep -o Linux | wc -l)
+	   echo "$file - $ocrr"
+	   ttl=$(($ttl+$ocrr))
+    
+    fi
+    done
+  
+}
+
+if [ $# -ne 1 ];then
+	echo "Invalid arguments>> Usage: ./$(basename $0) Path_To_Directory"
+	exit 3
+fi
+
+search_linux "$1" 0
+ echo "Total occurance: $ttl"
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+# Takes backup
+
+if [ $# -eq 2 ];then 
+	cp -avr $1 $2
+else
+	echo "Invalid arguments. Usage: $(basename $0) SOURCE DESTINATION"
+fi

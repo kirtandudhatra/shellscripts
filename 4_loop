@@ -1,0 +1,28 @@
+#!/bin/bash
+# This script that take one input number from user and print 1 to n number using three loops (For, while, until).
+declare -i n=0
+declare -i i=0
+read -p "Enter n:" n
+
+echo "For Loop:"
+for ((i=1;i<=n;i++)); do echo $i; done
+
+echo "While Loop:"
+n1=$n
+i=1
+while [ $n1 -gt 0 ]
+do
+	echo $i
+	n1=$(($n1-1))
+	i=$(($i+1))
+done
+
+echo "Until Loop:"
+n1=$n
+i=1
+until [ $n1 -le 0 ]
+do
+	echo $i
+	n1=$(($n1-1))
+	i=$(($i+1))
+done  
